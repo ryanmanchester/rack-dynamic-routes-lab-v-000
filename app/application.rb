@@ -7,6 +7,7 @@ class Application
 
     if req.path.match(/items/)
       binding.pry
+      item_name = req.path.split("/items/").last
       item = @@items.each do |i|
         binding.pry
       end
