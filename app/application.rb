@@ -10,6 +10,8 @@ class Application
       item_name = req.path.split("/items/").last
       item = @@items.find{|i| i.name == item_name}
       resp.write item.price
+binding.pry
+    elsif
 
     else
       resp.write "Route not found"
