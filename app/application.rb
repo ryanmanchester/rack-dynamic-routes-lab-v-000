@@ -7,7 +7,9 @@ class Application
 
     if req.path.match(/items/)
       binding.pry
-      item = @@items.find {|i| i.price}
+      item = @@items.each do |i|
+        binding.pry
+      end
     else
       resp.write "Route not found"
       resp.status = 404
