@@ -6,7 +6,7 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/items/)
-      #binding.pry
+      binding.pry
       item = @@items.each do |i|
         binding.pry
       end
